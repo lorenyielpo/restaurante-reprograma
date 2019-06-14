@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Restaurante Reprograma</title>
 </head>
+
 <body>
   <main class="container">
     <div class="jumbotron">
@@ -14,11 +17,33 @@
 
     </div>
     <div class="row">
-        <div class="col-8" id="items-cardapio">
-          <!-- Seu código dinâmico vai ficar aqui -->
+      <div class="col-8" id="items-cardapio">
+        <!-- Seu código dinâmico vai ficar aqui -->
+      </div>
+      <div class="col-4 bg-light rounded" id="cadastro">
+        <h3>Cadastre seu prato favorito aqui!</h3>
+        <div class="form-group">
+          <form>
+            <label for="nome_input">Nome</label>
+            <input type="text" class="form-control" id="nome_input" />
         </div>
+
+        <div class="form-group">
+          <label for="descricao_input">Descrição</label>
+          <input type="text" class="form-control" id="descricao_input" />
+        </div>
+
+        <div class="form-group">
+          <label for="imagem_input">Imagem</label>
+          <input type="text" class="form-control" id="imagem_input" />
+        </div>
+        <input type="submit" class="btn btn-dark" id="criar_comida_button" value="Criar!">
+        </form>
+      </div>
     </div>
+
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>
